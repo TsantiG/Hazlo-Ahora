@@ -1,13 +1,16 @@
-import nav from "./components/nav.user";
-import Homeview from "./components/home.view";
+
+import Homeview from "./components/homeview";
+import FooterObserver from "./components/observers/Footer.observer";
 
 export default function Home() {
-  return (
-    <main className="flex flex-col justify-between p-5">
-      <div>
-        <Homeview />
-      </div>
 
+  return (
+    <main className=" grid flex-col w-full min-h-screen p-5">
+      <Homeview />
+      <FooterObserver />
+    
     </main>
   );
 }
+
+
